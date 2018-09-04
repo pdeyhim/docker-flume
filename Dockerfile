@@ -4,6 +4,7 @@ MAINTAINER Alex Wilson a.wilson@alumni.warwick.ac.uk
 ENV JAVA_HOME /opt/java
 ENV PATH /opt/flume/bin:/opt/java/bin:$PATH
 ENV DEBIAN_FRONTEND noninteractive
+ENV LOG_VERBOSE DEBUG 
 
 RUN apt-get update -qq \ 
     && apt-get install -q -y --no-install-recommends wget \
